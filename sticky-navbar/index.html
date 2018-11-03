@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:500">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div> 
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <section class="home">
+
+        </section>
+        <section class="content">
+            <p>Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Voluptatum, error voluptatem.
+                Illo facere debitis neque nam eos enim, sequi
+                porro magni mollitia qui sint iusto magnam
+                recusandae nobis ab obcaecati?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Error ducimus, odio saepe atque blanditiis
+                obcaecati molestias dicta fuga sunt. Porro fuga
+                voluptatem suscipit sed cumque quod odio quos
+                labore recusandae!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Voluptatum, error voluptatem.
+                    Illo facere debitis neque nam eos enim, sequi
+                    porro magni mollitia qui sint iusto magnam
+                    recusandae nobis ab obcaecati?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Error ducimus, odio saepe atque blanditiis
+                obcaecati molestias dicta fuga sunt. Porro fuga
+                voluptatem suscipit sed cumque quod odio quos
+                labore recusandae!</p>
+        </section>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>    
+</body>
+</html>
